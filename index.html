@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERNSHIP SIGNUP FORM</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/8422cf9e7d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main class="main-container">
+        <section class="sub-container">
+            <h2 class="hidden">Parent Form Section</h2>
+            <h3>INTERNSHIP SIGNUP FORM</h3>
+
+            <section class="red-bar">
+                <h2 class="hidden">Red Bar</h2>
+            </section>
+
+            <section id="form">
+                <h2 class="hidden">Main Form Section</h2>
+                <p>Prepare for your career with a Project Management, Web-Development, Graphic design, or Digital Marketing Internship at Northern.</p>
+
+                <form id="main-form" onsubmit="return false" method="POST">
+                    <section id="invalid">
+                        <h2 class="hidden">Error Message</h2>
+                    </section>
+                    <section class="input-fields">
+                        <h2 class="hidden">Input Fields of Form</h2>
+                        <input type="email" value="" id="email" name="email" placeholder="Your Email Address *">
+
+                        <select id="interests" name="interests">
+                            <option value="you-interest" class="your-interest" disabled selected>Your Interests</option>
+                            <option value="Development" class="development">Development</option>
+                            <option value="Design" class="design">Design</option>
+                        </select>
+
+                    </section>
+                    <button id="submit" type="submit" onclick="myFunction()">Sign Up Now <i style='font-size:20px' class='fas fa-caret-right'></i></button>
+
+                </form>
+            </section>
+
+            <section id="thankyou" class="hidden">
+                <h2 class="hidden">Thank You Message</h2>
+                <h3>Thanks for your interest !</h3>
+                <p>We will review your application and contact you for additional information should your background and experience meet the requirements of one of our openings.</p>
+            </section>
+        </section>
+
+
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

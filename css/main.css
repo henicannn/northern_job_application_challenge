@@ -1,0 +1,188 @@
+/*CSS document*/
+
+.hidden {
+    display: none;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background-color: #282828;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sub-container {
+    width: 50%;
+}
+
+.sub-container h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 65px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.red-bar {
+    width: 15vw;
+    height: 1vh;
+    background-color: #D02035;
+    margin: 50px 0px 50px 0px;
+}
+
+#form p {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #A3A3A3;
+    margin: 0px 0px 50px 0px;
+    line-height: 30PX;
+}
+
+.input-fields {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+#invalid {
+    font-family: 'Merriweather', serif;
+    font-size: 12px;
+    font-style: normal;
+    color: #797979;
+    width: 46%;
+    text-align: right;
+    padding-bottom: 5px;
+}
+
+#email {
+    width: 23vw;
+    margin-right: 40px;
+}
+
+#interests {
+    width: 23vw;
+}
+
+.your-interest {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #797979;
+}
+
+input[type=email],
+select {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    font-style: italic;
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    outline: none;
+}
+
+input[type=email]:focus {
+    border: 2px solid #D02035;
+}
+
+input[placeholder] {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #797979;
+}
+
+#submit {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    font-weight: bold;
+    word-spacing: 3px;
+    background-color: #D02035;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 30px;
+    position: absolute;
+    width: 48vw;
+    overflow-x: hidden;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #7e1420;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+#thankyou h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+#thankyou p {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #A3A3A3;
+    margin: 0px 0px 50px 0px;
+    line-height: 30PX;
+}
+
+@media only screen and (max-width: 768px) {
+    .sub-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    .sub-container h3 {
+        font-size: 50px;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    .input-fields {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    #submit {
+        width: 80%;
+    }
+    #email {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #interests {
+        width: 100%;
+    }
+    #invalid {
+        width: 100%;
+    }
+}
